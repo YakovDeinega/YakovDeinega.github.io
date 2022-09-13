@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="ru">
+    <head>
+        <title>
+            Web-Development
+        </title>
+    </head>
+    <body>
+        <h1 id="Begin">
+            First work for web-development
+        </h1>
+        <h2>
+            Список ссылок:
+        </h2>
+        <ol>
+            <li>
+                <a href="http://www.example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a>
+            </li>
+            <li>
+                <a href="https://www.example.com/">Абсолютная ссылка на главную страницу сайта example.com в протоколе https</a>
+            </li>
+            <a></a>
+            <li>
+                <a href="ftp://ftp.bluebyte.com/bids_updates/darkspace.exe">Ссылка на файл на сервере FTP без авторизации</a>
+            </li>
+            <li>
+                <a href="ftp://user:password@address/file.txt">Ссылка на файл на сервере FTP с авторизацией</a>
+            </li>
+            <li>
+                <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I#%D0%9B%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C">Ссылка на фрагмент страницы некоторого сайта</a>
+            </li>
+            <li>
+                <a href="#Middle">Ссылка на фрагмент текущей страницы(середины)</a>
+            </li>
+            <li>
+                <a href="https://www.ozon.ru/category/konsoli-playstation-31751/?ismarkeddown=t&seller=0">Ссылка с двумя параметрами в URL</a>
+            </li>
+            <li id="Middle">
+                <ul>
+                    <li>
+                        <a href="#Begin"title="В начало текущего сайта">Вверх</a>
+                    </li>
+                    <li>
+                        <a href="#Image"title="Переход на картинку">Изображение UEFA</a>
+                    </li>
+                    <li>
+                        <a href="#Form"title="Переход к форме">К форме</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>Ссылка без href</a>
+            </li>
+            <li>
+                <a href="">Ссылка с пустым href</a>
+            </li>
+            <li>
+                <a href="https://example.com/" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+            </li>
+            <!--noindex-->
+            <li>
+                <a href="https://example.com/">Ссылка, запрещенная для индексации поисковиками</a>
+            </li>
+            <!--noindex-->
+            <li>
+                <p>
+                    Благодаря <a href="https://www.cybersport.ru/" title="киберспорт">киберспорт.ру</a> можно узнавать все новости про киберспорт
+                </p>
+            </li>
+            <li>
+                <a href="https://www.uefa.com/" id="Image"><img src="uefa.png" alt="UEFA" style="width:300px;"></a>
+            </li>
+            <li>
+                <map name="figure">
+                    <area shape="rect" coords="10, 20, 250, 150" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B1%D1%83%D0%BB%D1%8C%D0%B4%D0%BE%D0%B3" alt="прямоугольник">
+                    <area shape="circle" coords="380, 100, 100" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%84%D0%B8%D0%BD%D0%BA%D1%81_(%D0%BF%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%BA%D0%BE%D1%88%D0%B5%D0%BA)" alt="круг">
+                </map>
+                <img src="Безымянный.png" usemap=#figure alt="фигуры">
+            </li>
+            <li>
+                <a href="page.html">Относительная ссылка на страницу в текущем каталоге</a>
+            </li>
+            <li>
+                <a href="about/page1.html">Относительная ссылка на страницу в каталоге about</a>
+            </li>
+            <li>
+                <a href="../up.html">Относительная ссылка на страницу в каталоге уровнем выше этого</a>
+            </li>
+            <li>
+                <a href="../../first.html">Относительная ссылка на страницу в каталоге двумя уровнями выше этого</a>
+            </li>
+            <li>
+                <a href="index.html">Сокращенная на главную</a>
+            </li>
+            <li>
+                <a href="about/abc.html">Сокращенная ссылка на внутреннюю страницу</a>
+            </li>
+        </ol>
+        <h2 id="Form">
+            Форма HTML
+        </h2>
+        <form action="/" method="POST">
+            <label>
+                Имя:<br>
+                <input name="field-name-1" type="name" placeholder="Имя пользователя:">
+            </label><br>
+            <label>
+                Адрес электронной почты (email-адрес):<br>
+                <input name="field-email" type="email" placeholder="Электронная почта:">
+            </label><br>
+            <label>
+                Дата рождения:<br>
+                <input name="field-date" type="date" value="2001-01-01">
+            </label><br>
+            Укажите пол:<br>
+            <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> Мужской 
+            </label>
+            <label>
+                <input type="radio" name="radio-group-1" value="Значение2"> Женский 
+            </label><br>
+            Выберите количество конечностей:<br>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во0" checked="checked"> 0
+            </label>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во1"> 1
+            </label>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во2"> 2
+            </label>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во3"> 3
+            </label>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во4"> 4
+            </label>
+            <label>
+                <input type="radio" name="radio-group-2" value="Кол-во5"> 5
+            </label><br>
+            <label>
+                Выберите сверхспособность:<br>
+                <select name="field-ability" multiple="multiple">
+                    <option value="Сила1" selected="'selected"> Бессмертие</option>
+                    <option value="Сила2"> Прохождение сквозь стены</option>
+                    <option value="Сила3"> Левитация</option>
+                </select>
+            </label><br>
+            <label>
+                Напишите свою биографию:<br>
+                <textarea name="field-bio"></textarea>
+            </label><br>
+            <label>
+                Чекбокс:<br>
+                <input type="checkbox" checked="unchecked" name="check1"> С контрактом ознакомлен(а)
+            </label><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </body>
+</html>

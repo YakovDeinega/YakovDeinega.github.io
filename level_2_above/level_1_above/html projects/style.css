@@ -24,7 +24,7 @@ a:hover{
 }
 img{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
 }
 .logo{
     width:70px;
@@ -47,7 +47,7 @@ img{
 .form{
     text-align: center;
     background: #c45238;
-    font-size:24px;
+    font-size:18px;
     border: 2px solid black;
     border-radius: 15px 100px 15px 100px;
 }

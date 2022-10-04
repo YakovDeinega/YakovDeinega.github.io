@@ -6,28 +6,34 @@
         </title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style2.css">
     </head>
     <body>
-        <a id="Begin"></a>
-        <header class="header">
-            <div class="title">
-                <img src="my_logo.png" class="logo" alt="Логотип">
-                <h1>First work for Web-Development</h1>
-            </div>
-        </header>
-        <div class="flex-container">
-            <nav class="navigation">
-                <p>Список ссылок основной навигации сайта:</p>
-                    <a href="#Begin" title="В начало текущего сайта">К началу</a>
-                    <a href="#Image" title="Переход на картинку">К изображению UEFA</a>
-                    <a href="#Form" title="Переход к форме">К форме</a>
+        <div class="header">
+            <a id="Begin"></a>
+            <div class="container">
+                <header class="text-center pb-3">
+                    <img src="my_logo.png" class="logo float-left pt-md-2 pt-4" alt="Логотип">
+                    <h1 class="pt-4">First work for Web-Development</h1>
+                </header>
+        </div>
+        </div>
+        <div class="container my-3">
+            <nav class="d-flex flex-row my-3">
+                <div class="navigation col-md-12 px-md-5 text-center">
+                    <div class="d-flex flex-column flex-md-row p-3 justify-content-between">
+                        <a href="#Begin" title="В начало текущего сайта">К началу</a>
+                        <a href="#Image" title="Переход на картинку">К изображению UEFA</a>
+                        <a href="#Form" title="Переход к форме">К форме</a>
+                    </div>
+                </div>
             </nav>
-            <div class="main_part">
-                <h2>
+            <div class="main_part d-flex flex-column text-center mx-auto my-2">
+                <h2 class="pt-2">
                     Список ссылок:
                 </h2>
-                <ol>
+                <ol class="pl-5">
                     <li>
                         <a href="http://www.example.com/">Абсолютная гиперссылка на главную страницу сайта example.com</a>
                     </li>
@@ -76,7 +82,7 @@
                             <area shape="rect" coords="10,20,250,150" href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B1%D1%83%D0%BB%D1%8C%D0%B4%D0%BE%D0%B3" alt="прямоугольник">
                             <area shape="circle" coords="380,100,100" href="https://ru.wikipedia.org/wiki/%D0%A1%D1%84%D0%B8%D0%BD%D0%BA%D1%81_(%D0%BF%D0%BE%D1%80%D0%BE%D0%B4%D0%B0_%D0%BA%D0%BE%D1%88%D0%B5%D0%BA)" alt="круг">
                         </map>
-                        <img src="Безымянный.png" usemap=#figure alt="фигуры">
+                        <img class="pt-2" src="Безымянный.png" usemap=#figure alt="фигуры">
                     </li>
                     <li>
                         <a href="page.html">Относительная ссылка на страницу в текущем каталоге</a>
@@ -98,146 +104,148 @@
                     </li>
                 </ol>
             </div>
-            <div class="table">
-                <h2>
-                    Таблица
-                </h2>
-                <table>
-                    <tr>
-                        <td colspan="3">Сравнение видеокарт GTX 1050 Ti и GTX 1650</td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Параметры для сравнения
-                        </th>
-                        <th>
-                            GTX 1050 Ti
-                        </th>
-                        <th>
-                            GTX 1650
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Цена
-                        </th>
-                        <th>
-                            286$
-                        </th>
-                        <th>
-                            205$
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Архитектура
-                        </th>
-                        <th>
-                            Pascal
-                        </th>
-                        <th>
-                            Turing
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Тип
-                        </th>
-                        <th>
-                            Декстопная
-                        </th>
-                        <th>
-                            Декстопная
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Пропускная способность памяти
-                        </th>
-                        <th>
-                            112 Гб/с
-                        </th>
-                        <th>
-                            128 Гб/с
-                        </th>
-                    </tr>
-                    <tr>
-                        <th>
-                            Шейдерная модель
-                        </th>
-                        <th>
-                            6.4
-                        </th>
-                        <th>
-                            6.5
-                        </th>
-                    </tr>
-                </table>
-            </div>
-            <div class="form">
-                <form action="/" method="POST">
-                    <h2 id="Form">
-                        Форма HTML
+            <div class="d-flex flex-column-reverse flex-sm-column">
+                <div class="table my-2 text-center">
+                    <h2>
+                        Таблица
                     </h2>
-                    <label>
-                        Имя:<br>
-                        <input name="field-name-1" type="text" placeholder="Имя пользователя:" required="required">
-                    </label><br>
-                    <label>
-                        Адрес электронной почты (email-адрес):<br>
-                        <input name="field-email" type="email" placeholder="Электронная почта:" required="required">
-                    </label><br>
-                    <label>
-                        Дата рождения:<br>
-                        <input name="field-date" type="date" value="2001-01-01" required="required">
-                    </label><br>
-                    Укажите пол:<br>
-                    <label>
-                        <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> Мужской 
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-1" value="Значение2"> Женский 
-                    </label><br>
-                    Выберите количество конечностей:<br>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во0" checked="checked"> 0
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во1"> 1
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во2"> 2
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во3"> 3
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во4"> 4
-                    </label>
-                    <label>
-                        <input type="radio" name="radio-group-2" value="Кол-во5"> 5
-                    </label><br>
-                    <label>
-                        Выберите сверхспособность:<br>
-                        <select name="field-ability" multiple="multiple">
-                            <option value="Сила1" selected="selected"> Бессмертие</option>
-                            <option value="Сила2"> Прохождение сквозь стены</option>
-                            <option value="Сила3"> Левитация</option>
-                        </select>
-                    </label><br>
-                    <label>
-                        Напишите свою биографию:<br>
-                        <textarea name="field-bio" required="required"></textarea>
-                    </label><br>
-                    <label>
-                        Чекбокс:<br>
-                        <input type="checkbox" name="check1" required="required"> С контрактом ознакомлен(а)
-                    </label><br>
-                    <input type="submit" value="Отправить">
-                </form>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td colspan="3">Сравнение видеокарт GTX 1050 Ti и GTX 1650</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Параметры для сравнения
+                            </th>
+                            <th>
+                                GTX 1050 Ti
+                            </th>
+                            <th>
+                                GTX 1650
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Цена
+                            </th>
+                            <th>
+                                286$
+                            </th>
+                            <th>
+                                205$
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Архитектура
+                            </th>
+                            <th>
+                                Pascal
+                            </th>
+                            <th>
+                                Turing
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Тип
+                            </th>
+                            <th>
+                                Декстопная
+                            </th>
+                            <th>
+                                Декстопная
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Пропускная способность памяти
+                            </th>
+                            <th>
+                                112 Гб/с
+                            </th>
+                            <th>
+                                128 Гб/с
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Шейдерная модель
+                            </th>
+                            <th>
+                                6.4
+                            </th>
+                            <th>
+                                6.5
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="form text-center py-3 my-2">
+                    <form action="/" method="POST">
+                        <h2 id="Form">
+                            Форма HTML
+                        </h2>
+                        <label>
+                            Имя:<br>
+                            <input name="field-name-1" type="text" placeholder="Имя пользователя:" required="required">
+                        </label><br>
+                        <label>
+                            Адрес электронной почты (email-адрес):<br>
+                            <input name="field-email" type="email" placeholder="Электронная почта:" required="required">
+                        </label><br>
+                        <label>
+                            Дата рождения:<br>
+                            <input name="field-date" type="date" value="2001-01-01" required="required">
+                        </label><br>
+                        Укажите пол:<br>
+                        <label>
+                            <input type="radio" checked="checked" name="radio-group-1" value="Значение1"> Мужской 
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-1" value="Значение2"> Женский 
+                        </label><br>
+                        Выберите количество конечностей:<br>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во0" checked="checked"> 0
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во1"> 1
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во2"> 2
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во3"> 3
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во4"> 4
+                        </label>
+                        <label>
+                            <input type="radio" name="radio-group-2" value="Кол-во5"> 5
+                        </label><br>
+                        <label>
+                            Выберите сверхспособность:<br>
+                            <select name="field-ability" multiple="multiple">
+                                <option value="Сила1" selected="selected"> Бессмертие</option>
+                                <option value="Сила2"> Прохождение сквозь стены</option>
+                                <option value="Сила3"> Левитация</option>
+                            </select>
+                        </label><br>
+                        <label>
+                            Напишите свою биографию:<br>
+                            <textarea name="field-bio" required="required"></textarea>
+                        </label><br>
+                        <label>
+                            Чекбокс:<br>
+                            <input type="checkbox" name="check1" required="required"> С контрактом ознакомлен(а)
+                        </label><br>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer mw-100 pl-5 pt-2">
             <p>
                 Yakov Deinega © 2022
             </p>

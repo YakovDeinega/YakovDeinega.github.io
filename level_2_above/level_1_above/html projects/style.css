@@ -7,6 +7,11 @@ body{
 .header{
     background: #6B8BC2;
 }
+.calc{
+    background:#c45238;
+    border: 2px solid black;
+    border-radius: 25px;
+}
 h1{
     font-size:34px;
 }

@@ -7,7 +7,7 @@
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta name="viewport" content="width=device-width initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style2.css">
         <script defer src="./calc.js"></script>
     </head>
     <body>
@@ -18,14 +18,50 @@
                     <img src="my_logo.png" class="logo float-left pt-md-2 pt-4" alt="Логотип">
                     <h1 class="pt-4">First work for Web-Development</h1>
                 </header>
-        </div>
+            </div>
         </div>
         <div class="container my-3">
-            <div class="calc text-center py-3" id="result">
+            <div class="calc text-center py-3">
                 <form>
                     <input name="field1" type="text" placeholder="Введите количество">
                     <input name="field2" type="text" placeholder="Введите цену товара">
                     <button id="button1">Результат</button>
+                </form>
+            </div>
+            <div class="calc text-center py-3 my-3">
+                Калькулятор стоимости товара:
+                <form action="/" method="POST">
+                    <label>
+                        <input name="amount" type="text" placeholder="Введите количество">
+                    </label>
+                    <br>
+                    <label>
+                        <select name="prodType">
+                            <option value="1">Донат</option>
+                            <option value="2">Пицца</option>
+                            <option value="3">Бургер</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label>
+                        <div id="radios">
+                            <label>
+                                <input type="radio" name="prodOptions" value="option1">Пепперони</label>
+                                <input type="radio" name="prodOptions" value="option2">4 сыра</label>
+                                <input type="radio" name="prodOptions" value="option3">Гавайская</label>
+                            </label>
+                        </div>
+                    </label>
+                    <label>
+                        <div id="checkboxes">
+                            <label><input type="checkbox" name="prop1">Помидоры</label>
+                            <label><input type="checkbox" name="prop2">Сыр</label>
+                            <label><input type="checkbox" name="prop3">Котлета</label>
+                        </div>
+                    </label>
+                    <button type="button" id="button">Результат</button>
+                    <br>
+                    <div id="result"></div>
                 </form>
             </div>
             <nav class="d-flex flex-row my-3">

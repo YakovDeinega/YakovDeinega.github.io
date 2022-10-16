@@ -65,7 +65,6 @@ function deleteV(){
     });
 }
 window.addEventListener("DOMContentLoaded", function (event) {
-    console.log("DOM fully loaded and parsed");
     let radioDiv = document.getElementById("radios");
     radioDiv.style.display = "none";
     let checkDiv = document.getElementById("checkboxes");
@@ -78,6 +77,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
         deleteV();
         makePrice();
     });
+    console.log("DOM fully loaded and parsed");
     let b2 = document.getElementById("button");
     b2.addEventListener("click", makePrice);
     let b1 = document.getElementById("button1");
